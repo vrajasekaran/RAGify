@@ -2,12 +2,14 @@ from transformers import BertModel, AutoTokenizer
 import pandas as pd
 import streamlit as st
 
+from commondata import DUMMY_TEXT
+
 model_name = "bert-base-cased"
 
 model = BertModel.from_pretrained(model_name)
 tokenizerBert = AutoTokenizer.from_pretrained(model_name)
 
-input_txt = st.text_area(label="Enter your Text")
+input_txt = st.text_area(label="Enter your Text", value=DUMMY_TEXT)
 
 #sentence = "When will you be Back?"
 
