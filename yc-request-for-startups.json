@@ -1,0 +1,128 @@
+[
+    {
+      "cohort": "Fall 2025",
+      "category": "AI-Powered Vocational Training",
+      "title": "AI Vocational Schools for the Physical AI Economy",
+      "description": "Build a new kind of vocational school for the AI economy to train people for physical infrastructure jobs like electricians, HVAC technicians, and welders. Use AI to create personalized training programs to get people job-ready in months, not years. The challenge is teaching hands-on skills through AI - potentially using multimodal AI, voice coaching, AR/VR simulation with AI tutors using vision models for feedback.",
+      "business_rationale": "Employers would pay to hire well-trained workers. Unlike coding bootcamps that struggled to scale quality human tutors, AI could solve this scaling problem. If you can make one effective AI teacher, it scales infinitely. Addresses the shortage of skilled tradespeople needed for AI infrastructure buildout.",
+      "tags": ["AI", "vocational training", "education", "AR/VR", "multimodal AI", "workforce development", "infrastructure"],
+      "technical_challenges": "Teaching physical skills through AI when you can't learn by typing - need real-world practice. Developing multimodal AI that can effectively coach through voice and vision. Creating AR/VR simulations realistic enough for skill development."
+    },
+    {
+      "cohort": "Fall 2025", 
+      "category": "AI-Powered Personalized Learning",
+      "title": "Personal AI Tutors for Everyone",
+      "description": "Build truly personalized learning experiences using AI's latest reasoning capabilities to break down complex topics step by step. Use multimodal foundation models to present concepts through animations, 3D object manipulation, and voice explanations. Create the equivalent of having a Grant Sanderson (3Blue1Brown) quality teacher available for every topic, personalized to each learner's needs.",
+      "business_rationale": "Online education market is large but most products deliver the same content to everyone. AI enables the holy grail of personalized education that's been a dream since the 1940s. Potential to scale high-quality education globally.",
+      "tags": ["AI", "education", "personalized learning", "multimodal", "tutoring", "EdTech"],
+      "technical_challenges": "Creating truly adaptive learning that adjusts to individual needs. Generating high-quality educational content (animations, visualizations) on demand. Maintaining engagement and learning effectiveness at scale."
+    },
+    {
+      "cohort": "Fall 2025",
+      "category": "High Revenue-Per-Employee Startups", 
+      "title": "AI-Native Companies Optimizing for Revenue Per Employee",
+      "description": "Build multi-billion dollar companies with small, high-agency teams using AI tools, optimizing for revenue per employee as the key metric. Target $500k+ revenue per employee by leveraging AI to eliminate the need for large teams. Focus on speed and execution advantages over bloated incumbents.",
+      "business_rationale": "AI tools now make it possible for small teams to build massive companies with minimal capital, similar to how cloud computing eliminated server infrastructure costs 15 years ago. Small efficient teams avoid politics, excessive meetings, and lack of focus that plague large companies.",
+      "tags": ["AI", "efficiency", "scalability", "high-agency teams", "revenue optimization"],
+      "technical_challenges": "Identifying which business processes can be effectively AI-automated. Building AI systems that maintain quality at scale. Creating sustainable competitive advantages with small teams."
+    },
+    {
+      "cohort": "Fall 2025",
+      "category": "AI-Native Enterprise Software",
+      "title": "Next-Generation Cloud-Native AI Enterprise Tools", 
+      "description": "Build the AI equivalent of Salesforce and ServiceNow - AI-native enterprise software that offers 10x better products than incumbents. Target the next wave of B2B disruption using AI as the foundation, not just a feature. Focus on areas where incumbents will struggle to adapt to AI-first approaches.",
+      "business_rationale": "Salesforce and ServiceNow each make $10B+ annually with $200B+ market caps by riding the cloud wave. Similar opportunity exists for AI-native enterprise tools. Incumbents will struggle to adapt, creating opportunities for new players to win.",
+      "tags": ["AI", "enterprise software", "B2B", "SaaS", "disruption", "cloud-native"],
+      "technical_challenges": "Building AI systems that are reliable enough for enterprise use. Creating sustainable competitive moats. Overcoming enterprise sales cycles and incumbent relationships."
+    },
+    {
+      "cohort": "Winter 2025",
+      "category": "Government Technology",
+      "title": "AI to Automate Government Tasks",
+      "description": "Use AI to automate and streamline government processes, reducing bureaucratic inefficiency and improving citizen services. Focus on digitizing and automating routine government tasks that currently require significant manual processing.",
+      "business_rationale": "Government is a massive market with significant inefficiencies. AI automation can reduce costs while improving service quality. Government contracts provide stable, long-term revenue streams.",
+      "tags": ["AI", "government", "automation", "GovTech", "bureaucracy", "public sector"],
+      "technical_challenges": "Navigating government procurement processes. Ensuring security and compliance requirements. Handling sensitive citizen data responsibly."
+    },
+    {
+      "cohort": "Winter 2025",
+      "category": "Public Safety Technology",
+      "title": "Emergency Response Systems and Law Enforcement Tools",
+      "description": "Build technology solutions to improve public safety through better emergency response systems and law enforcement tools. Focus on improving response times, coordination, and effectiveness of public safety operations.",
+      "business_rationale": "Public safety is a critical government function with significant budget allocations. Technology improvements can save lives while reducing costs. Municipal and federal markets provide substantial opportunities.",
+      "tags": ["public safety", "emergency response", "law enforcement", "crisis management", "government"],
+      "technical_challenges": "Real-time data processing under pressure. Integration with existing emergency systems. Balancing efficiency with privacy and civil liberties concerns."
+    },
+    {
+      "cohort": "Winter 2025", 
+      "category": "Manufacturing Automation",
+      "title": "US Manufacturing with ML and Robotics",
+      "description": "Build automated manufacturing systems using machine learning and robotics to bring manufacturing back to the US. Focus on creating competitive advantages through automation rather than low labor costs.",
+      "business_rationale": "Reshoring manufacturing trend driven by supply chain concerns and automation making location less dependent on labor costs. Large market opportunity in revitalizing US manufacturing competitiveness.",
+      "tags": ["manufacturing", "robotics", "machine learning", "automation", "reshoring", "supply chain"],
+      "technical_challenges": "Creating flexible automation systems. Competing with established overseas manufacturing. Developing ML systems that work reliably in industrial environments."
+    },
+    {
+      "cohort": "Winter 2025",
+      "category": "Financial Technology",
+      "title": "Stablecoins 2.0 - Business-Focused Stablecoin Management", 
+      "description": "Build next-generation stablecoin infrastructure and management tools focused on business use cases. Move beyond basic stablecoins to create comprehensive business-focused financial infrastructure.",
+      "business_rationale": "Growing adoption of stablecoins in business transactions. Businesses need sophisticated tools for managing, tracking, and utilizing stablecoins. Large fintech market opportunity.",
+      "tags": ["stablecoins", "cryptocurrency", "fintech", "business payments", "blockchain"],
+      "technical_challenges": "Regulatory compliance across jurisdictions. Building reliable financial infrastructure. Creating user-friendly interfaces for complex financial operations."
+    },
+    {
+      "cohort": "Winter 2025",
+      "category": "Semiconductor Design",
+      "title": "LLMs for Chip Design - More Efficient Chip Design",
+      "description": "Use large language models to make chip design more efficient and accessible. Apply AI to automate and optimize various aspects of semiconductor design processes.",
+      "business_rationale": "Chip design is extremely expensive and time-consuming. AI could dramatically reduce design time and costs while improving chip performance. Critical for maintaining semiconductor competitiveness.",
+      "tags": ["AI", "LLM", "semiconductor", "chip design", "automation", "hardware"],
+      "technical_challenges": "Understanding complex chip design requirements. Ensuring AI-designed chips meet performance and reliability standards. Integration with existing design tools and workflows."
+    },
+    {
+      "cohort": "Winter 2025",
+      "category": "AI-First Financial Products", 
+      "title": "Fintech 2.0 - AI-First Financial Products",
+      "description": "Build financial products and services that are AI-native from the ground up, not traditional fintech with AI features added on. Reimagine financial services through an AI-first lens.",
+      "business_rationale": "Financial services is a massive market ripe for AI disruption. AI-first approaches can provide personalized financial advice, automated investment management, and more efficient risk assessment at scale.",
+      "tags": ["AI", "fintech", "financial services", "AI-native", "automation"],
+      "technical_challenges": "Building AI systems that meet financial regulatory requirements. Ensuring reliability and accuracy in financial decisions. Managing sensitive financial data securely."
+    },
+    {
+      "cohort": "Winter 2025",
+      "category": "Space Infrastructure",
+      "title": "Space Companies - Space Infrastructure",
+      "description": "Build companies focused on space infrastructure development. This includes satellite networks, space manufacturing, orbital platforms, and other foundational space-based systems.",
+      "business_rationale": "Growing space economy with increasing commercial and government demand. Space infrastructure is becoming critical for communications, Earth observation, and future space exploration.",
+      "tags": ["space", "infrastructure", "satellites", "aerospace", "NewSpace"],
+      "technical_challenges": "High upfront capital requirements. Complex regulatory environment. Technical challenges of operating in space environment."
+    },
+    {
+      "cohort": "Winter 2025",
+      "category": "AI Engineering Tools",
+      "title": "AI-Aided Engineering Tools - Better Engineering Tools with AI", 
+      "description": "Build engineering tools that use AI to make engineers more productive and effective. Focus on AI-assisted design, simulation, analysis, and other engineering workflows.",
+      "business_rationale": "Engineering productivity tools is a large market. AI can significantly enhance engineering capabilities and speed up development cycles. Engineers are willing to pay for tools that make them more effective.",
+      "tags": ["AI", "engineering", "productivity tools", "CAD", "simulation", "design"],
+      "technical_challenges": "Understanding complex engineering workflows and requirements. Building AI systems that engineers trust for critical decisions. Integration with existing engineering software ecosystems."
+    },
+    {
+      "cohort": "Winter 2025",
+      "category": "Future-Proof Employment",
+      "title": "One Million Jobs 2.0 - Focus on Jobs AI Can't Replace",
+      "description": "Create businesses and platforms that generate jobs in areas where humans will continue to have advantages over AI. Focus on roles requiring creativity, complex human interaction, or physical presence.",
+      "business_rationale": "As AI automates many jobs, there's increasing need for employment in AI-resistant areas. Creating meaningful employment addresses social and economic challenges while building sustainable businesses.",
+      "tags": ["employment", "job creation", "AI-resistant", "human skills", "workforce"],
+      "technical_challenges": "Identifying truly AI-resistant job categories. Creating scalable business models around human-centric work. Balancing automation benefits with employment creation."
+    },
+    {
+      "cohort": "Spring 2025",
+      "category": "AI Operating System",
+      "title": "Privacy-First AI App Store and Operating System", 
+      "description": "Build a new operating system layer - a secure AI app store built around privacy-first principles and shared user memory. Allow users to control what each AI app can access (calendars, files, preferences) while providing developers with APIs, monetization infrastructure, and app-level access controls.",
+      "business_rationale": "As AI apps proliferate, there's need for a coordinating layer that manages permissions and data sharing. Platform economics - taking a percentage of transactions across all AI apps using the system.",
+      "tags": ["AI", "operating system", "privacy", "app store", "platform", "APIs"],
+      "technical_challenges": "Building secure inter-app communication systems. Creating intuitive privacy controls for users. Establishing developer ecosystem and adoption."
+    }
+]
