@@ -30,6 +30,7 @@ if (st.button('TOKENIZE WITH GEMMA')):
     tokenizerGemma = AutoTokenizer.from_pretrained("gemma-2-2b")
     st.write(tokenizerGemma.tokenize(input_txt))
 
+st.snow()
 # from tiktoken._educational import *
 
 # Train a BPE tokeniser on a small amount of text

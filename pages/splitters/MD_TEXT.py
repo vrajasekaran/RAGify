@@ -1,0 +1,5 @@
+from langchain_text_splitters import MarkdownTextSplitter
+
+from pages.splitters.BaseCharSplitter import BaseCharSplitter
+
+BaseCharSplitter(MarkdownTextSplitter())

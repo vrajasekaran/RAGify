@@ -19,7 +19,7 @@ class BaseCharSplitter:
         chunks = self.splitter.split_text(input_txt)
         st.info(f"TOTAL CHUNKS: {len(chunks)}")
         st.dataframe(chunks)
-
+        st.balloons()
 # for chunk in chunks:
 #     st.write(chunk)
 #     st.write("\n\n=========")
