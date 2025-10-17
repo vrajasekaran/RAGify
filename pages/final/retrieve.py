@@ -8,6 +8,8 @@ import os
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage
 
+from commondata import get_model
+
 load_dotenv()
 
 def test():
@@ -29,7 +31,7 @@ def test():
 
 def generate_final_answer(matched_chunks, query):
     try:
-        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+        llm = get_model()
 
         prompt_text = f"""
         Based on the following documents, please answer this question: {query}
