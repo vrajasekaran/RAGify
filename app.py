@@ -8,13 +8,20 @@ st.write("RAGify anything")
 
 pages = {
     "Tokenizer":[
-        st.Page("pages/1_tokenizer.py", title="Tokenizers"),
+        st.Page("pages/1_tokenizer/tokenizer.py", title="Tokenizers"),
     ],
     "Text Splitters":[
-        st.Page("pages/splitters/CHAR.py", title="CharacterTextSplitter"),
-        st.Page("pages/splitters/REC_CHAR.py", title="RecursiveCharacterTextSplitter"),
-        st.Page("pages/splitters/MD_TEXT.py", title="MarkdownTextSplitter"),
-        st.Page("pages/splitters/PDF.py", title="Unstructured.io partitions")
+        st.Page("pages/2_splitters/chara.py", title="CharacterTextSplitter"),
+        st.Page("pages/2_splitters/rec_char.py", title="RecursiveCharacterTextSplitter"),
+        st.Page("pages/2_splitters/md_text.py", title="MarkdownTextSplitter"),
+        st.Page("pages/2_splitters/pdf.py", title="Unstructured.io partitions")
+    ],
+    "Chunkers":[
+        st.Page("pages/3_chunk/title.py", title="Unstructured.io Chunk By Title"),
+        st.Page("pages/3_chunk/basic.py", title="Unstructured.io - Basic Chunk By Elements")
+    ],
+    "Image Summarizer":[
+        st.Page("pages/4_image_summarizer/image_sum.py", title="Image Summarizer through LLM")
     ]
 }
 
