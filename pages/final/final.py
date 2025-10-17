@@ -1,11 +1,12 @@
 import json
+from langchain_chroma import Chroma
 import pandas as pd
 import streamlit as st
 import os
 import base64
 from rich import print 
 from unstructured.partition.pdf import partition_pdf
-from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.documents import Document
 from dotenv import load_dotenv
@@ -204,7 +205,24 @@ def summarize_chunks(chunks) -> list[Document]:
 
     return docs
 
+def create_vector_store(docs):
+    embeddding_model = OpenAIEmbeddings(model="text-embedding-3-small")
+
+    vector_store = Chroma.from_documents(
+        documents=docs,
+        embedding=embeddding_model,
+        persist_directory=".",
+        # collection_metadata=
+
+    )
+    return vector_store
+
+
+
 st.info("summarize_chunks")
 summarized_docs = summarize_chunks(chunks)
-
+st.info("creating vector store")
+vs = create_vector_store(summarized_docs)
+# pd.DataFrame(vs)
 st.info("Finished Successfully!!!")
+

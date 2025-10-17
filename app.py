@@ -22,6 +22,10 @@ pages = {
     ],
     "Image Summarizer":[
         st.Page("pages/4_image_summarizer/image_sum.py", title="Image Summarizer through LLM")
+    ],
+    "RAG RAG":[
+        st.Page("pages/final/final.py", title="RAG RAG"),
+        st.Page("pages/final/retrieve.py", title="RAG Retrieve")
     ]
 }
 
