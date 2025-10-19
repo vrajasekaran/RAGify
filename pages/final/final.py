@@ -1,5 +1,6 @@
 import json
 from langchain_chroma import Chroma
+from langchain_ollama import ChatOllama, OllamaEmbeddings
 import pandas as pd
 import streamlit as st
 import os
@@ -9,6 +10,7 @@ from unstructured.partition.pdf import partition_pdf
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.documents import Document
+from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -57,9 +59,9 @@ from unstructured.chunking.title import chunk_by_title
 
 chunks = chunk_by_title(
     elements=elements,
-    max_characters=1000,
-    new_after_n_chars=800,
-    combine_text_under_n_chars=150
+    max_characters=500,
+    new_after_n_chars=200,
+    combine_text_under_n_chars=50
 )
 
 st.dataframe(chunks)
@@ -117,7 +119,12 @@ def create_summary(text: str, tables: list[str], images: list[str]):
    
 
     try:
-        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+        # llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+        # llm = ChatOllama(model="qwen2.5vl", temperature=0)
+        llm = ChatOllama(model="gemma3", temperature=0)
+        # llm = ChatOllama(model="gpt-oss", temperature=0)
+
+        # llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0)
         prompt_text = f"""You are creating a searchable description for document content retrieval.
 
         CONTENT TO ANALYZE:
@@ -206,12 +213,14 @@ def summarize_chunks(chunks) -> list[Document]:
     return docs
 
 def create_vector_store(docs):
-    embeddding_model = OpenAIEmbeddings(model="text-embedding-3-small")
+    # embeddding_model = OpenAIEmbeddings(model="text-embedding-3-small")
+
+    embeddding_model = OllamaEmbeddings(model="embeddinggemma")
 
     vector_store = Chroma.from_documents(
         documents=docs,
         embedding=embeddding_model,
-        persist_directory=".",
+        persist_directory="./gemma",
         # collection_metadata=
 
     )
