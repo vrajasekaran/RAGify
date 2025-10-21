@@ -7,16 +7,19 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage
+from langchain_ollama import OllamaEmbeddings
 
 from commondata import get_model
 
 load_dotenv()
 
 def test():
-    embeddding_model = OpenAIEmbeddings(model="text-embedding-3-small")
+    # embeddding_model = OpenAIEmbeddings(model="text-embedding-3-small")
+    embeddding_model = OllamaEmbeddings(model="embeddinggemma")
+
 
     vs = Chroma(
-        persist_directory=".",
+        persist_directory="./gemma1",
         embedding_function=embeddding_model
     )
 

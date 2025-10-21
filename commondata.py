@@ -12,7 +12,8 @@ Deployment: Turn your LangGraph applications into production-ready APIs and Assi
 
 
 def get_model():
-    llm = ChatOllama(model="gpt-oss", temperature=0)
+    # llm = ChatOllama(model="gemma3", temperature=0)
+    llm = ChatOllama(model="qwen3", temperature=0)
 
     # llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 

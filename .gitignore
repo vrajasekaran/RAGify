@@ -15,3 +15,8 @@ figures/
 
 chroma*
 *.bin
+
+mlartifacts/
+mlruns/
+gemma/
+mlruns.db

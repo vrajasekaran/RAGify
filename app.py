@@ -16,9 +16,15 @@ pages = {
         st.Page("pages/2_splitters/md_text.py", title="MarkdownTextSplitter"),
         st.Page("pages/2_splitters/pdf.py", title="Unstructured.io partitions")
     ],
-    "Chunkers":[
-        st.Page("pages/3_chunk/title.py", title="Unstructured.io Chunk By Title"),
-        st.Page("pages/3_chunk/basic.py", title="Unstructured.io - Basic Chunk By Elements")
+
+    "Chunkers - LangChain":[
+        st.Page("pages/3_chunk/lang/fixed.py", title="Fixed Size Chunking"),
+        st.Page("pages/3_chunk/lang/semantic.py", title="Semantic Chunking"),
+        
+    ],
+    "Chunkers - Unstructured.io":[
+        st.Page("pages/3_chunk/un/title.py", title="Unstructured.io Chunk By Title"),
+        st.Page("pages/3_chunk/un/basic.py", title="Unstructured.io - Basic Chunk By Elements")
     ],
     "Image Summarizer":[
         st.Page("pages/4_image_summarizer/image_sum.py", title="Image Summarizer through LLM")

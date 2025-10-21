@@ -12,8 +12,19 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.documents import Document
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
+import mlflow
+import datetime
+
 
 load_dotenv()
+
+now = datetime.datetime.now()
+timestamp_string = now.strftime("%Y%m%d_%H%M%S")
+
+mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
+# mlflow.set_experiment(f"RAGify_{timestamp_string}")
+mlflow.set_experiment("R1")
+mlflow.langchain.autolog()
 
 input_pdf = st.file_uploader(
     "Upload PDF",
@@ -220,7 +231,7 @@ def create_vector_store(docs):
     vector_store = Chroma.from_documents(
         documents=docs,
         embedding=embeddding_model,
-        persist_directory="./gemma",
+        persist_directory="./gemma1",
         # collection_metadata=
 
     )
