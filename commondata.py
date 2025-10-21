@@ -10,6 +10,9 @@ Development: Build your applications using LangChain's open-source building bloc
 Productionization: Use LangSmith to inspect, monitor and evaluate your chains, so that you can continuously optimize and deploy with confidence.
 Deployment: Turn your LangGraph applications into production-ready APIs and Assistants with LangGraph Cloud."""
 
+CHUNK_SIZE = 35
+CHUNK_OVERLAP = 5
+
 
 def get_model():
     # llm = ChatOllama(model="gemma3", temperature=0)

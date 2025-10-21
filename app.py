@@ -19,6 +19,7 @@ pages = {
 
     "Chunkers - LangChain":[
         st.Page("pages/3_chunk/lang/fixed.py", title="Fixed Size Chunking"),
+        st.Page("pages/3_chunk/lang/recursive.py", title="Recursive Chunking"),
         st.Page("pages/3_chunk/lang/semantic.py", title="Semantic Chunking"),
         
     ],
